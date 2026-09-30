@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  min-height: 100dvh;
+  color: #2F3B48;
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 18px;
+  background-color: #F3F7FB;
+  background-image:
+    radial-gradient(70rem 40rem at 50% -10%, rgba(188,213,236,.75), transparent 60%),
+    radial-gradient(50rem 30rem at 100% 100%, rgba(210,174,90,.16), transparent 60%),
+    linear-gradient(180deg, #F6F9FC 0%, #FBF8F0 100%);
+  background-attachment: fixed;
+}
+
+/* iOS não dá zoom em campos com 16px+ */
+input, select, button { font-size: 16px; font-family: inherit; }
+
+:focus-visible { outline: 3px solid #6F9BC4; outline-offset: 3px; }
+
+@layer components {
+  .btn-ouro {
+    @apply inline-flex w-full items-center justify-center gap-2 rounded-full px-8 text-white
+           font-semibold tracking-[.12em] uppercase shadow-[0_10px_24px_-10px_rgba(138,100,22,.75)]
+           transition active:scale-[.985] disabled:opacity-70 disabled:cursor-not-allowed;
+    min-height: 58px;
+    background: linear-gradient(135deg, #C9A24A 0%, #A97C1F 55%, #8A6416 100%);
+  }
+  .btn-ouro:not(:disabled):hover { filter: brightness(1.06); }
+  .btn-contorno {
+    @apply inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-ouro
+           px-8 font-semibold tracking-[.12em] uppercase text-ouro-escuro bg-white/60
+           transition active:scale-[.985] hover:bg-white;
+    min-height: 54px;
+  }
+  .campo {
+    @apply w-full rounded-2xl border border-ceu bg-white px-4 text-tinta placeholder:text-tinta/40
+           shadow-inner shadow-ceu/20 transition focus:border-fita focus:outline-none focus:ring-4 focus:ring-fita/25;
+    min-height: 54px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
