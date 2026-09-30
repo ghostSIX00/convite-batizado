@@ -77,7 +77,10 @@ export default function RsvpForm({ onDone }: Props) {
       <p className="text-center font-script text-[44px] leading-none text-ouro" id="rsvp-titulo">
         Confirmação de presença
       </p>
-      <p className="mx-auto mt-3 max-w-[30ch] text-center text-[17px] leading-snug text-tinta/75">
+      <p className="mx-auto mt-2 text-center text-[16px] font-medium text-marinho/80">
+        (Obs: Almoço após o batismo)
+      </p>
+      <p className="mx-auto mt-1 max-w-[30ch] text-center text-[16px] leading-snug text-tinta/75">
         Leva menos de um minuto.
       </p>
 
