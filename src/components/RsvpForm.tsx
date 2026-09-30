@@ -80,9 +80,6 @@ export default function RsvpForm({ onDone }: Props) {
       <p className="mx-auto mt-2 text-center text-[16px] font-medium text-marinho/80">
         (Obs: Almoço após a celebração do batismo)
       </p>
-      <p className="mx-auto mt-1 max-w-[30ch] text-center text-[16px] leading-snug text-tinta/75">
-        Leva menos de um minuto.
-      </p>
 
       <div className="mt-6">
         <label htmlFor="nome" className="mb-2 block text-[17px] font-semibold text-marinho">
