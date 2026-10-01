@@ -40,7 +40,7 @@ Copie `.env.example` para `.env.local` e preencha:
 npm install
 npm run dev
 ```
-Convite: http://localhost:3000 · Padrinhos: http://localhost:3000/padrinhos · Painel: http://localhost:3000/admin
+Convite: http://localhost:3000 · Madrinha: http://localhost:3000/madrinha · Painel: http://localhost:3000/admin
 
 ### 6) Deploy na Vercel
 1. Suba a pasta para um repositório no GitHub (o `.env.local` já está no `.gitignore`).
@@ -64,7 +64,7 @@ Convite: http://localhost:3000 · Padrinhos: http://localhost:3000/padrinhos · 
 
 ## Estrutura
 ```
-src/app            páginas (/, /padrinhos, /admin, /admin/login), layout e SEO
+src/app            páginas (/, /madrinha, /padrinhos [redireciona para /madrinha], /admin, /admin/login), layout e SEO
 src/components     GodparentsFlow, RsvpFlow, RsvpModal, RsvpForm, SuccessView, admin/*
 src/services       acesso ao Supabase (confirmacoes.ts)
 src/lib            clientes Supabase, auth, config do evento
@@ -75,7 +75,6 @@ public/og.jpg      prévia do WhatsApp (convite inteiro sobre fundo desfocado)
 supabase/schema.sql
 ```
 
+## Convite da madrinha
 
-## Convite dos padrinhos
-
-Acesse `http://localhost:3000/padrinhos` para ver as mensagens especiais e a imagem personalizada para os padrinhos. O botão final direciona ao convite principal em `/`.
+Acesse `http://localhost:3000/madrinha` para ver as mensagens especiais e a imagem personalizada. O botão final direciona ao convite principal em `/`. Links antigos para `/padrinhos` redirecionam automaticamente para essa rota.
