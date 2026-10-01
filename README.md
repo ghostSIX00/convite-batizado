@@ -69,7 +69,7 @@ src/components     GodparentsFlow, RsvpFlow, RsvpModal, RsvpForm, SuccessView, a
 src/services       acesso ao Supabase (confirmacoes.ts)
 src/lib            clientes Supabase, auth, config do evento
 src/types          interfaces
-public/convite.png imagem original (não alterada)
+public/convite.png imagem principal do convite de batizado
 public/convite-padrinhos.png imagem especial da madrinha
 public/convite-padrinho.png imagem especial do padrinho
 public/og.jpg      prévia do WhatsApp (convite inteiro sobre fundo desfocado)
