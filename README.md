@@ -78,4 +78,4 @@ supabase/schema.sql
 
 ## Convites dos padrinhos
 
-Acesse `/madrinha` para ver a mensagem e a imagem personalizada para a madrinha, ou `/padrinho` para a versão do padrinho. O botão final de ambas direciona ao convite principal em `/`. Links antigos para `/padrinhos` redirecionam para `/madrinha`.
+Acesse `/madrinha` para ver a mensagem e a imagem personalizada para a madrinha, ou `/padrinho` para a versão do padrinho. Ambos os fluxos terminam na imagem personalizada, sem direcionamento ao convite principal. Links antigos para `/padrinhos` redirecionam para `/madrinha`.
