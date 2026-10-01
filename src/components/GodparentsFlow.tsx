@@ -4,8 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export default function GodparentsFlow() {
+interface Props {
+  papel: "madrinha" | "padrinho";
+  imagem: string;
+}
+
+export default function GodparentsFlow({ papel, imagem }: Props) {
   const [etapa, setEtapa] = useState<"parabens" | "escolha" | "convite">("parabens");
+  const foiEscolhida = papel === "madrinha";
+  const destinatario = foiEscolhida ? "a madrinha" : "o padrinho";
+  const tituloEscolha = foiEscolhida
+    ? "Você foi escolhida para ser Madrinha do Anthony Gael"
+    : "Você foi escolhido para ser Padrinho do Anthony Gael";
 
   return (
     <main className="flex min-h-dvh flex-col items-center justify-center bg-white px-5 py-10">
@@ -39,7 +49,7 @@ export default function GodparentsFlow() {
           <>
             <p className="font-script text-4xl leading-tight text-ouro sm:text-5xl">Com muito carinho</p>
             <h1 className="mx-auto mt-5 max-w-[20ch] text-3xl font-semibold leading-snug text-ouro-escuro sm:text-4xl">
-              Você foi escolhido(a) para ser Padrinho(a) do Anthony Gael
+              {tituloEscolha}
             </h1>
             <button type="button" className="btn-ouro mt-9" onClick={() => setEtapa("convite")}>
               Ver o convite
@@ -49,8 +59,8 @@ export default function GodparentsFlow() {
           <>
             <div className="w-full overflow-hidden rounded-[10px] bg-white shadow-[0_30px_60px_-28px_rgba(51,80,110,.35),0_0_0_1px_rgba(188,213,236,.7)]">
               <Image
-                src="/convite-padrinhos.png"
-                alt="Convite especial para os padrinhos do batizado de Anthony Gael"
+                src={imagem}
+                alt={`Convite especial para ${destinatario} do batizado de Anthony Gael`}
                 width={736}
                 height={1104}
                 priority
