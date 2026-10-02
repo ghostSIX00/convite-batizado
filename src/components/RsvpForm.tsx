@@ -80,8 +80,8 @@ export default function RsvpForm({ onDone }: Props) {
       <p className="mx-auto mt-2 text-center text-[16px] font-medium text-marinho/80">
         (Obs: Almoço após a celebração do batismo)
       </p>
-       <p className="mx-auto mt-2 text-center text-[16px] font-medium text-marinho/80">
-        (Local do Almoço: Rua w10, 223, Chico Alexandre. Fazendinha)
+       <p className="mx-auto mt-2 text-center text-[18px] font-medium text-marinho/80">
+        (Local do Almoço: Rua W10, 223, Chico Alexandre. Fazendinha)
       </p>
         
 
