@@ -10,7 +10,7 @@ export default function Home() {
       {/* Convite original, sem cortes, sem distorção, sem re-compressão */}
       <div className="w-full overflow-hidden rounded-[10px] bg-white shadow-[0_30px_60px_-28px_rgba(51,80,110,.55),0_0_0_1px_rgba(188,213,236,.9)]">
         <Image
-          src="/convite.png"
+          src="/convite.png.jpg"
           alt="Convite de batizado de Anthony Gael, com pomba, cruz, criança em oração, pia batismal e vela"
           width={736}
           height={1104}
